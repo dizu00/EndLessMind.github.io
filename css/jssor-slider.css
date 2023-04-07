@@ -1,0 +1,9 @@
+.jssora22l,.jssora22r{display:block;position:absolute;width:40px;height:58px;cursor:pointer;background:url('../images/a22.png') center center no-repeat;overflow:hidden}
+.jssora22l{background-position:-10px -31px}
+.jssora22r{background-position:-70px -31px}
+.jssora22l:hover{background-position:-130px -31px}
+.jssora22r:hover{background-position:-190px -31px}
+.jssora22l.jssora22ldn{background-position:-250px -31px}
+.jssora22r.jssora22rdn{background-position:-310px -31px}
+.jssora22l.jssora22lds{background-position:-10px -31px;opacity:.3;pointer-events:none}
+.jssora22r.jssora22rds{background-position:-70px -31px;opacity:.3;pointer-events:none}
