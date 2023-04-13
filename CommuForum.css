@@ -1,0 +1,254 @@
+/* Community Forum Page Styles */
+/* Global Styles */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, main, footer {
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Forum page header */
+.forum-header {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Forum topics container */
+.forum-topics {
+  margin: 20px;
+}
+
+/* Forum topic item */
+.forum-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
+/* Forum topic item title */
+.forum-topic h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Forum topic item details */
+.forum-topic .details {
+  display: flex;
+  align-items: center;
+}
+
+/* Forum topic item author */
+.forum-topic .author {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Forum topic item date */
+.forum-topic .date {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Forum topic item actions */
+.forum-topic .actions {
+  display: flex;
+}
+
+/* Forum topic item action button */
+.forum-topic .actions button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Forum topic item action button:hover */
+.forum-topic .actions button:hover {
+  background-color: #3e8e41;
+}
+
+/* Forum topic form container */
+.forum-form {
+  margin: 20px;
+}
+
+/* Forum topic form input field */
+.forum-form input[type=text], .forum-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Forum topic form submit button */
+.forum-form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Forum topic form submit button:hover */
+.forum-form input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+/* Forum Container */
+.forum-container {
+    margin-top: 50px;
+  }
+  
+  /* Forum Header */
+  .forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Forum Title */
+  .forum-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* New Thread Button */
+  .new-thread-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* New Thread Button Hover */
+  .new-thread-btn:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Thread List */
+  .thread-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  /* Thread Card */
+  .thread-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Thread Title */
+  .thread-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Thread Content */
+  .thread-content {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Thread Author */
+  .thread-author {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Thread Date */
+  .thread-date {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Reply Button */
+  .reply-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Reply Button Hover */
+  .reply-btn:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Reply Form */
+  .reply-form {
+    margin-top: 20px;
+  }
+  
+  /* Reply Form Label */
+  .reply-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Reply Form Input */
+  .reply-form input[type="text"], 
+  .reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Reply Form Button */
+  .reply-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Reply Form Button Hover */
+  .reply-form button:hover {
+    background-color: #0062cc;
+  }
+  
