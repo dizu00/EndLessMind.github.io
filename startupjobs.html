@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.smartmenus.bootstrap-4.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css"/>
+
+    <style>
+
+*{
+						margin: 0;
+						padding: 0;
+						box-sizing: border-box;
+						font-family: 'Poppins', sans-serif;
+					}
+					
+					body
+					
+					{
+						background: #000;
+						min-height: 200vh;
+					}
+					
+					header
+					{
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						transition: 0.6s;
+						padding: 40px 100px;
+						z-index: 100000;
+					}
+					
+					header .logobhai
+					{
+						position: relative;
+						width: 6;
+						height: 6vh;
+					
+					}
+					
+					header.sticky
+					{
+						padding: 5px 100px;
+						background: #fff;
+					}
+					header .vaim
+					{
+						position: relative;
+						font-weight: 700;
+						color:  #fff;
+						text-decoration: none;
+						font-size: 1.5em;
+						text-transform: uppercase;
+						letter-spacing: 2px;
+						transition: 0.6s;
+					
+					}
+					
+					header ul
+					{
+						position: relative;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+					}
+					
+					
+					header ul li
+					{
+						position: relative;
+						list-style: none;
+					
+					}
+					
+					header ul li a
+					{
+						position: relative;
+						margin: 0 15px;
+						text-decoration: none;
+						color: #fff;
+						letter-spacing: 2px;
+						font-weight: 500px;
+						transition: 0.6s;
+					}
+					
+					.ritik
+					{
+						position: relative;
+						width: 100%;
+						height: 49vh;
+						/*background: url('https://source.unsplash.com/720x600/?tool');*/
+						background: url('check.jpg');
+						background-size: cover;
+					
+					}
+					
+					header.sticky .vaim, 
+					
+					header.sticky ul li a
+					{
+						color: #000;
+					}
+					
+					
+					.container{
+						max-width: 1170px;
+						margin:auto;
+					}
+					.row{
+						display: flex;
+						flex-wrap: wrap;
+					}
+					ul{
+						list-style: none;
+					}
+
+        .job-list {
+  margin-bottom: 20px;
+}
+
+.job-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.job-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job-list li {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.job-list li h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.enroll-link {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.enroll-link:hover {
+  background-color: #005fa3;
+}
+
+.enroll-form {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.enroll-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.enroll-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.enroll-form input[type="text"],
+.enroll-form input[type="email"],
+.enroll-form select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.enroll-form button {
+  background-color: #0077cc;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+
+</head>
+
+
+<body>
+
+
+	<div id="menu-bar" class="col-sm-12">
+		<nav class="navbar navbar-expand-lg navbar-light  rounded mb-4">
+			<!--  <div class="container">-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="nav navbar-nav">
+					<li class="nav-item dropdown active"><a href="index.html" class="nav-link dropdown-toggle"><span class="data-hover"data-hover="home">home</span></a>
+						<ul class="dropdown-menu">
+							<li><a href="index.html" class="dropdown-item">Home 1</a></li>
+							<li><a href="index_2.html" class="dropdown-item">Home 2</a></li>
+							<li><a href="index_3.html" class="dropdown-item">Home 3</a></li>
+							<li><a href="index_4.html" class="dropdown-item">Home 4</a></li>
+							<li class="active"><a href="index_5.html" class="dropdown-item">Home 5</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="Shortcodes">Startup's</span></a>
+						<ul class="dropdown-menu">
+							<li><a href="elements.html" class="dropdown-item">Elements</a></li>
+							<li><a href="form-elements.html" class="dropdown-item">Form elements</a></li>
+							<li><a href="columns.html" class="dropdown-item">Columns</a></li>
+							<li><a href="typography.html" class="dropdown-item">Typography</a></li>
+							<li><a href="pricing-tables.html" class="dropdown-item">Pricing Tables</a></li>
+							<li><a href="animation.html" class="dropdown-item">Animation</a></li>
+							<li><a href="icons.html" class="dropdown-item">Icons</a></li>
+						</ul>
+					</li>
+	
+					<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="pages">Freelancing</span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown">
+								<a href="about.html" class="dropdown-item">About</a>
+								<ul class="dropdown-menu">
+									<li><a href="about.html" class="dropdown-item">About Us 1</a></li>
+									<li><a href="about-2.html" class="dropdown-item">About Us 2</a></li>
+								</ul>
+							</li>
+							<li><a href="services.html" class="dropdown-item">Services</a></li>
+							<li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+							<li><a href="cart.html" class="dropdown-item">Cart</a></li>
+							<li><a href="shop.html" class="dropdown-item">shop</a></li>
+							<li><a href="sidebar-right.html" class="dropdown-item">Right Sidebar</a></li>
+							<li><a href="sidebar-left.html" class="dropdown-item">Left Sidebar</a></li>
+							<li><a href="404-page.html" class="dropdown-item">404 Page</a></li>
+						</ul>
+					</li>
+	
+					<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="Portfolio">Chat</span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown"><a href="#" class="dropdown-item">Chat</a>
+								<ul class="dropdown-menu">
+									<li><a href="portfolio_2.html" class="dropdown-item">Portfolio 2</a></li>
+									<li><a href="portfolio_3.html" class="dropdown-item">Portfolio 3</a></li>
+									<li><a href="portfolio_4.html" class="dropdown-item">Portfolio 4</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="portfolio_masonry_3.html" class="dropdown-item">Chat</a>
+								<ul class="dropdown-menu">
+									<li><a href="portfolio_masonry_2.html" class="dropdown-item">Masonry portfolio 2</a></li>
+									<li><a href="portfolio_masonry_3.html" class="dropdown-item">Masonry portfolio 3</a></li>
+									<li><a href="portfolio_masonry_4.html" class="dropdown-item">Masonry portfolio 4</a></li>
+								</ul>
+							</li>
+	
+							<li class="dropdown">
+								<a href="portfolio_single.html" class="dropdown-item">Portfolio Single</a>
+								<ul class="dropdown-menu">
+									<li><a href="portfolio_single.html" class="dropdown-item">Portfolio Single 1</a></li>
+									<li><a href="portfolio_single_2.html" class="dropdown-item">Portfolio Single 2</a></li>
+									<li><a href="portfolio_single_3.html" class="dropdown-item">Portfolio Single 3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+	
+					<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="blog">Earn Money</span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown"><a href="portfolio_masonry_3.html" class="dropdown-item">Masnory Blog Style</a>
+								<ul class="dropdown-menu">
+									<li><a href="blog-masonry-two.html" class="dropdown-item">Blog Masonry 2</a></li>
+									<li><a href="blog-masonry-three.html" class="dropdown-item">Blog Masonry 3</a></li>
+									<li><a href="blog-masonry-four.html" class="dropdown-item">Blog Masonry 4</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="portfolio_masonry_3.html" class="dropdown-item">Classic Blog Style</a>
+								<ul class="dropdown-menu">
+									<li><a href="blog-large-image.html" class="dropdown-item">Large Image</a></li>
+									<li><a href="blog-medium-image.html" class="dropdown-item">Medium Image</a></li>
+								</ul>
+							</li>
+							<li><a href="blog-post.html" class="dropdown-item">Single Post</a></li>
+						</ul>
+					</li>
+	
+					<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"> <span class="data-hover" data-hover="contact">Contact Us</span></a>
+						
+					</li>
+				</ul>
+			</div>
+			<ul class="dropdown-items clearfix">
+				<li>
+					<div class="my-account">
+						<div class="dropdown">
+							<a class="account-dropdown" href="#" data-toggle="dropdown">
+								Hi, user
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu pull-right" role="menu">
+								<li>
+									<a href="#">My Account</a>
+								</li>
+								<li>
+									<a href="#">Checkout</a>
+								</li>
+								<li>
+									<a href="cart.html">Cart</a>
+								</li>
+								<li>
+									<a href="shop.html">Shop</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="shop-cart">
+						<div class="dropdown">
+							<a class="cart-dropdown" href="#" data-toggle="dropdown">
+								<i class="fa fa-shopping-cart"></i>
+								<span class="cart-items">2</span>
+							</a>
+							<ul class="dropdown-menu pull-right" role="menu">
+								<li class="cart-products">
+									<ul style="overflow: hidden;" tabindex="5000">
+										<li>
+											<div class="cart-product clearfix">
+												<div class="left-data">
+													<img alt="" src="images/cart-product.png">
+												</div>
+												<div class="right-data">
+													<strong>
+														<a href="#">Flying Ninja </a>
+													</strong>
+													<p>$45.00 x 1</p>
+													<a class="remove-item" href="#">
+														<i class="fa fa-trash-o"></i>
+													</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="cart-product clearfix">
+												<div class="left-data">
+													<img alt="" src="images/cart-product2.png">
+												</div>
+												<div class="right-data">
+													<strong>
+														<a href="#">Flying Ninja </a>
+													</strong>
+													<p>$45.00 x 2</p>
+													<a class="remove-item" href="#">
+														<i class="fa fa-trash-o"></i>
+													</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="cart-subtotal">Subtotal: $135.00</li>
+								<li class="cart-buttons clearfix">
+									<a class="btn btn-default grey" href="#" role="button">View Cart</a>
+									<a class="btn btn-default" href="#" role="button">Checkout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	</header>
+	
+	</div>
+	</div>
+	</div></div>
+	</div></div>
+	</div>
+
+    <div class="job-list">
+        <h2>Startup Jobs and Services</h2>
+        <ul>
+          <li>
+            <h3>Web Development</h3>
+            <p>We are looking for a web developer to help build our startup's website.</p>
+            <a href="#" class="enroll-link">Enroll Now</a>
+          </li>
+          <li>
+            <h3>Marketing</h3>
+            <p>We need a marketing expert to help us promote our product.</p>
+            <a href="#" class="enroll-link">Enroll Now</a>
+          </li>
+          <li>
+            <h3>Accounting</h3>
+            <p>We are seeking an accountant to manage our finances.</p>
+            <a href="#" class="enroll-link">Enroll Now</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="enroll-form">
+        <h2>Enroll in a Startup Service</h2>
+        <form action="enroll.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="service">Select Service:</label>
+          <select id="service" name="service">
+            <option value="Web Development">Web Development</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Accounting">Accounting</option>
+          </select>
+      
+          <button type="submit">Enroll Now</button>
+        </form>
+      </div>
+      
+</body>
+</html>
+
