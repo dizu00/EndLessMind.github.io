@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+	<link rel="stylesheet" type="text/css" href="UserLoginPg.css">
+</head>
+<body>
+	<div class="login">
+		<h1>User Login</h1>
+		<form method="post" action="#">
+			<label for="firstname">First Name:</label>
+			<input type="text" name="firstname" id="firstname" required>
+			<br>
+			<label for="lastname">Last Name:</label>
+			<input type="text" name="lastname" id="lastname" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" minlength="8" required>
+			<br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+	</div>
+</body>
+</html>

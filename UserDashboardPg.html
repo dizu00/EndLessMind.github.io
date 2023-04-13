@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Ideas</a></li>
+        <li><a href="#">My Jobs</a></li>
+        <li><a href="#">Account Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats">
+        <h2>My Statistics</h2>
+        <ul>
+          <li>Total Ideas Submitted: 10</li>
+          <li>Total Jobs Posted: 5</li>
+          <li>Collaborations Initiated: 2</li>
+          <li>Earnings: $500</li>
+        </ul>
+      </section>
+      <section class="ideas">
+        <h2>My Submitted Ideas</h2>
+        <ul>
+          <li>Idea 1</li>
+          <li>Idea 2</li>
+          <li>Idea 3</li>
+        </ul>
+      </section>
+      
+      <section class="jobs">
+        <h2>My Posted Jobs</h2>
+        <ul>
+          <li>Job 1</li>
+          <li>Job 2</li>
+          <li>Job 3</li>
+        </ul>
+      </section>
+      
+      <section class="collaboration">
+        <h2>Collaboration Tools</h2>
+        <ul>
+          <li><a href="#">Message Center</a></li>
+          <li><a href="#">Shared Ideas</a></li>
+          <li><a href="#">Collaborators List</a></li>
+        </ul>
+      </section>
+      
+    </main>
+    
+
+
+  <script>
+    // Fetch user statistics and display them in the "stats" section
+    fetch('/api/stats')
+      .then(response => response.json())
+      .then(data => {
+        // Update the HTML content of the "stats" section with the fetched data
+        const statsSection = document.querySelector('.stats');
+        statsSection.innerHTML = `<h2>User Statistics</h2>
+                                   <p>Total Ideas: ${data.totalIdeas}</p>
+                                   <p>Active Jobs: ${data.activeJobs}</p>`;
+      })
+      .catch(error => console.error('Error fetching user statistics:', error));
+  
+    // Fetch user's submitted ideas and display them in the "ideas" section
+    fetch('/api/ideas')
+      .then(response => response.json())
+      .then(data => {
+        // Generate HTML code for each idea and append it to the "ideas" section
+        const ideasSection = document.querySelector('.ideas');
+        data.forEach(idea => {
+          const ideaHtml = `<div class="idea">
+                              <h3>${idea.title}</h3>
+                              <p>${idea.description}</p>
+                              <small>Submitted on ${idea.date}</small>
+                            </div>`;
+          ideasSection.innerHTML += ideaHtml;
+        });
+      })
+      .catch(error => console.error('Error fetching user ideas:', error));
+  
+    // Fetch user's posted jobs and display them in the "jobs" section
+    fetch('/api/jobs')
+      .then(response => response.json())
+      .then(data => {
+        // Generate HTML code for each job and append it to the "jobs" section
+        const jobsSection = document.querySelector('.jobs');
+        data.forEach(job => {
+          const jobHtml = `<div class="job">
+                             <h3>${job.title}</h3>
+                             <p>${job.description}</p>
+                             <small>Posted on ${job.date}</small>
+                           </div>`;
+          jobsSection.innerHTML += jobHtml;
+        });
+      })
+      .catch(error => console.error('Error fetching user jobs:', error));
+  
+    // Implement collaboration tools using a third-party library such as Socket.io
+    const socket = io('https://your-server.com');
+    // ...
+  </script>
+  <footer>
+    <p>&copy; 2023 YourCompany. All rights reserved.</p>
+  </footer>
+</body>
+</html>
