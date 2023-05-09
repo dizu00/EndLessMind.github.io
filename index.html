@@ -5,21 +5,232 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>EndlessMind's | Become entrepreneur & Daily Earn</title>
+	<title>EndlessMind's | Digital Idea Incubator </title>
 	<meta name="description" content="">
-
+    
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/jquery.smartmenus.bootstrap-4.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        @import url('https: //fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body
+    
+    {
+        background: #000;
+        min-height: 200vh;
+    }
+    
+    header
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 40px 100px;
+        z-index: 100000;
+    }
+    
+    header .logobhai
+    {
+        position: relative;
+        width: 6;
+        height: 6vh;
+    
+    }
+    
+    header.sticky
+    {
+        padding: 5px 100px;
+        background: #fff;
+    }
+    header .vaim
+    {
+        position: relative;
+        font-weight: 700;
+        color:  #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    
+    }
+    
+    header ul
+    {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    header ul li
+    {
+        position: relative;
+        list-style: none;
+    
+    }
+    
+    header ul li a
+    {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 0.6s;
+    }
+    
+    .ritik
+    {
+        position: relative;
+        width: 100%;
+        height: 49vh;
+        /*background: url('https://source.unsplash.com/720x600/?tool');*/
+        background: url('check.jpg');
+        background-size: cover;
+    
+    }
+    
+    header.sticky .vaim, 
+    
+    header.sticky ul li a
+    {
+        color: #000;
+    }
+    #test-box p{
+        font-size: large;
+        font-style: oblique;
+
+    }
+    #introduction{}
+    #test-box{margin: 15px;
+    padding: 10px;
+    /* background: scroll; */
+    background:linear-gradient(#2193b0 , #6dd5ed); border-radius: 2px;}
+    #test-box h2{
+        font-style:oblique; 
+        color: #fff;}
+    
+    .container{
+        max-width: 1170px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    /*responsive*/
+    @media(max-width: 767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+    
+    .vaimpier
+    {
+    
+        position: relative;
+        width: 100%;
+        height: 49vh;
+        background: url('app.jpg');
+        background-size: cover;
+        padding: 15px;
+    
+    }
+    
+    .vaim{
+    font-family: 'Poppins', sans-serif;
+    }
+    </style>
 </head>
 <body class="home">
 <!--Start Header-->
@@ -41,215 +252,14 @@
 </script>
     <div id="logo-bar" class="col-sm-12">
         <div id="logo">
-            <style>
-            @import url('https: //fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-    
-                *{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Poppins', sans-serif;
-                }
-                
-                body
-                
-                {
-                    background: #000;
-                    min-height: 200vh;
-                }
-                
-                header
-                {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    transition: 0.6s;
-                    padding: 40px 100px;
-                    z-index: 100000;
-                }
-                
-                header .logobhai
-                {
-                    position: relative;
-                    width: 6;
-                    height: 6vh;
-                
-                }
-                
-                header.sticky
-                {
-                    padding: 5px 100px;
-                    background: #fff;
-                }
-                header .vaim
-                {
-                    position: relative;
-                    font-weight: 700;
-                    color:  #fff;
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    transition: 0.6s;
-                
-                }
-                
-                header ul
-                {
-                    position: relative;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                
-                header ul li
-                {
-                    position: relative;
-                    list-style: none;
-                
-                }
-                
-                header ul li a
-                {
-                    position: relative;
-                    margin: 0 15px;
-                    text-decoration: none;
-                    color: #fff;
-                    letter-spacing: 2px;
-                    font-weight: 500px;
-                    transition: 0.6s;
-                }
-                
-                .ritik
-                {
-                    position: relative;
-                    width: 100%;
-                    height: 49vh;
-                    /*background: url('https://source.unsplash.com/720x600/?tool');*/
-                    background: url('check.jpg');
-                    background-size: cover;
-                
-                }
-                
-                header.sticky .vaim, 
-                
-                header.sticky ul li a
-                {
-                    color: #000;
-                }
-                
-                
-                .container{
-                    max-width: 1170px;
-                    margin:auto;
-                }
-                .row{
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-                ul{
-                    list-style: none;
-                }
-                .footer{
-                    background-color: #24262b;
-                    padding: 70px 0;
-                }
-                .footer-col{
-                   width: 25%;
-                   padding: 0 15px;
-                }
-                .footer-col h4{
-                    font-size: 18px;
-                    color: #ffffff;
-                    text-transform: capitalize;
-                    margin-bottom: 35px;
-                    font-weight: 500;
-                    position: relative;
-                }
-                .footer-col h4::before{
-                    content: '';
-                    position: absolute;
-                    left:0;
-                    bottom: -10px;
-                    background-color: #e91e63;
-                    height: 2px;
-                    box-sizing: border-box;
-                    width: 50px;
-                }
-                .footer-col ul li:not(:last-child){
-                    margin-bottom: 10px;
-                }
-                .footer-col ul li a{
-                    font-size: 16px;
-                    text-transform: capitalize;
-                    color: #ffffff;
-                    text-decoration: none;
-                    font-weight: 300;
-                    color: #bbbbbb;
-                    display: block;
-                    transition: all 0.3s ease;
-                }
-                .footer-col ul li a:hover{
-                    color: #ffffff;
-                    padding-left: 8px;
-                }
-                .footer-col .social-links a{
-                    display: inline-block;
-                    height: 40px;
-                    width: 40px;
-                    background-color: rgba(255,255,255,0.2);
-                    margin:0 10px 10px 0;
-                    text-align: center;
-                    line-height: 40px;
-                    border-radius: 50%;
-                    color: #ffffff;
-                    transition: all 0.5s ease;
-                }
-                .footer-col .social-links a:hover{
-                    color: #24262b;
-                    background-color: #ffffff;
-                }
-                
-                /*responsive*/
-                /* @media(max-width: 767px){
-                  .footer-col{
-                    width: 50%;
-                    margin-bottom: 30px;
-                }
-                }
-                @media(max-width: 574px){
-                  .footer-col{
-                    width: 100%;
-                }
-                }
-                
-                .vaimpier
-                {
-                
-                    position: relative;
-                    width: 100%;
-                    height: 49vh;
-                    background: url('app.jpg');
-                    background-size: cover;
-                    padding: 15px;
-                
-                }
-                
-                .vaim{
-        font-family: 'Poppins', sans-serif;
-    } */
-                </style>
-            <!--h1><a href="index.html"><img src="images/logo.png"/></a></h1-->
+            
+            <h1><a href="index.html"><img src="images/EndlessMind Logo2.png" style="width: 100px ;"/></a></h1>
+            <h1>EndLess Mind</h1>
+          
             <header>
-                <!--img src="loading.gif" class="logobhai"-->
-                <!--a href="#" class="vaim">EndLess Mind's</a-->
-<!-- Navigation
-================================================== -->
+                <!-- <img src="loading.gif" class="logobhai">
+                <a href="#" class="vaim">EndLess Mind's</a> -->
+<!-- Navigation -->
 <div id="menu-bar" class="col-sm-12">
     <nav class="navbar navbar-expand-lg navbar-light  rounded mb-4">
         <!--  <div class="container">-->
@@ -259,16 +269,16 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav navbar-nav">
-                <li class="nav-item dropdown active"><a href="index.html" class="nav-link dropdown-toggle"><span class="data-hover"data-hover="home">home</span></a>
-                    <ul class="dropdown-menu">
+                <li class="nav-item dropdown active"><a href="template.html" class=""><span class="data-hover"data-hover="home">home</span></a>
+                    <!-- <ul class="dropdown-menu">
                         <li><a href="index.html" class="dropdown-item">Home 1</a></li>
                         <li><a href="index_2.html" class="dropdown-item">Home 2</a></li>
                         <li><a href="index_3.html" class="dropdown-item">Home 3</a></li>
                         <li><a href="index_4.html" class="dropdown-item">Home 4</a></li>
                         <li class="active"><a href="index_5.html" class="dropdown-item">Home 5</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="Shortcodes">Startup's</span></a>
+                <!-- <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="Shortcodes">Startup's</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="elements.html" class="dropdown-item">Elements</a></li>
                         <li><a href="form-elements.html" class="dropdown-item">Form elements</a></li>
@@ -297,38 +307,49 @@
                         <li><a href="sidebar-left.html" class="dropdown-item">Left Sidebar</a></li>
                         <li><a href="404-page.html" class="dropdown-item">404 Page</a></li>
                     </ul>
-                </li>
+                </li> -->
 
-                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="Portfolio">Chat</span></a>
-                    <ul class="dropdown-menu">
+                <li class="nav-item dropdown"><a href="#" class=""><span class="data-hover" data-hover="Portfolio">About Us</span></a>
+                    <!-- <ul class="dropdown-menu">
                         <li class="dropdown"><a href="#" class="dropdown-item">Chat</a>
-                            <ul class="dropdown-menu">
+                            <!-- <ul class="dropdown-menu">
                                 <li><a href="portfolio_2.html" class="dropdown-item">Portfolio 2</a></li>
                                 <li><a href="portfolio_3.html" class="dropdown-item">Portfolio 3</a></li>
                                 <li><a href="portfolio_4.html" class="dropdown-item">Portfolio 4</a></li>
-                            </ul>
+                            </ul> --> 
                         </li>
                         <li class="dropdown">
-                            <a href="portfolio_masonry_3.html" class="dropdown-item">Chat</a>
+                            <a href="portfolio_masonry_3.html" class="dropdown-item">Idea Incubation</a>
                             <ul class="dropdown-menu">
-                                <li><a href="portfolio_masonry_2.html" class="dropdown-item">Masonry portfolio 2</a></li>
-                                <li><a href="portfolio_masonry_3.html" class="dropdown-item">Masonry portfolio 3</a></li>
-                                <li><a href="portfolio_masonry_4.html" class="dropdown-item">Masonry portfolio 4</a></li>
+                                <li><a href="portfolio_masonry_2.html" class="dropdown-item">Idea Evaluation</a></li>
+                                <li><a href="portfolio_masonry_3.html" class="dropdown-item">Feedback</a></li>
+                                <li><a href="portfolio_masonry_4.html" class="dropdown-item">Market Analysis</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="portfolio_single.html" class="dropdown-item">Portfolio Single</a>
-                            <ul class="dropdown-menu">
+                            <a href="portfolio_single.html" class="dropdown-item">Startup Jobs</a>
+                            <!-- <ul class="dropdown-menu">
                                 <li><a href="portfolio_single.html" class="dropdown-item">Portfolio Single 1</a></li>
                                 <li><a href="portfolio_single_2.html" class="dropdown-item">Portfolio Single 2</a></li>
                                 <li><a href="portfolio_single_3.html" class="dropdown-item">Portfolio Single 3</a></li>
-                            </ul>
+                            </ul> -->
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="portfolio_single.html" class="dropdown-item">Learn Skills</a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="portfolio_single.html" class="dropdown-item">Portfolio Single 1</a></li>
+                                <li><a href="portfolio_single_2.html" class="dropdown-item">Portfolio Single 2</a></li>
+                                <li><a href="portfolio_single_3.html" class="dropdown-item">Portfolio Single 3</a></li>
+                            </ul> -->
                         </li>
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="data-hover" data-hover="blog">Earn Money</span></a>
+                
+
+                <!-- <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"><span class="dropdown-item" data-hover="blog">Learn Skills</span></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown"><a href="portfolio_masonry_3.html" class="dropdown-item">Masnory Blog Style</a>
                             <ul class="dropdown-menu">
@@ -346,15 +367,11 @@
                         </li>
                         <li><a href="blog-post.html" class="dropdown-item">Single Post</a></li>
                     </ul>
-                </li>
+                </li> -->
 
-                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"> <span class="data-hover" data-hover="contact">Contact</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="contact_1.html" class="dropdown-item">Contact 1</a></li>
-                        <li><a href="contact_2.html" class="dropdown-item">Contact 2</a></li>
-                        <li><a href="contact_3.html" class="dropdown-item">Contact 3</a></li>
-                    </ul>
-                </li>
+                <!-- <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"> <span class="data-hover" data-hover="contact">Contact Us</span></a> 
+                    
+                </li>-->
             </ul>
         </div>
         <ul class="dropdown-items clearfix">
@@ -367,7 +384,7 @@
                         </a>
                         <ul class="dropdown-menu pull-right" role="menu">
                             <li>
-                                <a href="UserLoginPg.html">SignUp/Login</a>
+                                <a href="#">My Account</a>
                             </li>
                             <li>
                                 <a href="#">Checkout</a>
@@ -500,6 +517,22 @@
 
 	<!--start wrapper-->
 	<section class="wrapper">
+
+        <!-- Introduction -->
+       
+        <main>
+            <section id="introduction">
+            <div>
+                <div id="test-box">
+                    <h2>EndLess Mind</h2>
+                <p>We are dedicated to providing a comprehensive ecosystem for startups and aspiring entrepreneurs. Our platform offers a range of services and resources to help you turn your ideas into reality and accelerate your business growth.</p>
+                <p>Whether you're looking for mentorship, funding opportunities, networking, or access to a community of like-minded individuals, our platform has got you covered. We believe in the power of collaboration and aim to create an environment that fosters innovation and success.</p>
+                <p>Join us on this exciting journey and unlock your full entrepreneurial potential. Together, let's shape the future of startups and bring groundbreaking ideas to life.</p>
+            
+                </div>
+            </div>    
+            </section>
+
 		<!--start info service-->
 		<section class="grey_bg">
 			<div class="container">
@@ -510,7 +543,7 @@
                                 <i class="fa fa-laptop"></i>
                             </div>
                             <div class="service-content">
-                                <h3><a href="#">Startup's</a></h3>
+                                <h3><a href="ideafeedpage.html">Idea Incubation</a></h3>
                                 <p>
                                     We provide multiple services to young entrepreneurs to help them create successful startups and become the next future unicorn. This includes mentorship and guidance from experienced entrepreneurs, access to resources and funding, educational and personalized advice and support to help young entrepreneurs.                              
                                 </p>
@@ -518,27 +551,27 @@
                             <div class="read"><a href="#">+</a></div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                   <!-- <div class="col-md-3 col-sm-6">
                         <div class="serviceBox_3">
                             <div class="service-icon">
                                 <i class="fa fa-mobile"></i>
                             </div>
                             <div class="service-content">
-                                <h3><a href="#">Support</a></h3>
+                                <h3><a href="#">Technical Support</a></h3>
                                 <p>
                                     We can provide technical support to young entrepreneurs by offering advice and guidance on a variety of topics, such as business planning, marketing strategies, financial management, legal advice, and technology solutions.
                                 </p>
                             </div>
                             <div class="read"><a href="#">+</a></div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-md-3 col-sm-6">
                         <div class="serviceBox_3">
                             <div class="service-icon">
                                 <i class="fa fa-briefcase"></i>
                             </div>
                             <div class="service-content">
-                                <h3><a href="#">Freelancing</a></h3>
+                                <h3><a href="startupjobs.html">Startup Jobs</a></h3>
                                 <p>
                                     Our goal is to connect young freelancers with clients who need their services. We provide a platform for freelancers to showcase their skills and find job opportunities, while also helping clients find the right person for the job. We strive to make the job search process easier and faster for both freelancers and clients.
                                 </p>
@@ -552,10 +585,36 @@
                                 <i class="fa fa-rocket"></i>
                             </div>
                             <div class="service-content">
-                                <h3><a href="#">Earn Money</a></h3>
+                                <h3><a href="#">Learning</a></h3>
                                 <p>
                                     Our service works by allowing users to complete tasks like surveys or watching videos to earn rewards. The rewards earned can then be redeemed for gifts like gift cards or merchandise. To start earning rewards, simply register with our service and begin completing tasks.
                                 </p>
+                            </div>
+                            <div class="read"><a href="#">+</a></div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox_3">
+                            <div class="service-icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3><a href="#">Startup Community</a></h3>
+                                <p>
+                                    Startup community connecting entrepreneurs, investors, and stakeholders. It offers networking, resources, events, mentorship, and funding opportunities, fostering collaboration and knowledge sharing in a supportive ecosystem.
+
+                                
+                                </p>
+                                <p>
+                                    Key Features and Benefits:
+                                </p>
+                                <ol>
+                                    <li>Networking Oppurtunities</li>
+                                    <li>Resource Sharing</li>
+                                    <li>Events and Meetups</li>
+                                    <li>Support and Collaborations</li>
+                                </ol>
                             </div>
                             <div class="read"><a href="#">+</a></div>
                         </div>
@@ -591,7 +650,7 @@
                                 <div class="tab-pane fade" id="Recent">
                                     <p>We are glad to hear that you are interested in using our service to earn money every week and redeem your gifts! Our service provides a platform for individuals and businesses to post jobs, and then find suitable candidates to complete them. We also offer a rewards system that allows users to earn money for completing tasks and redeem them for gifts. If you have any questions or would like to get started, please feel free to contact us. Thank you!</p>
                                     <ul class="list_style">
-                                        <li><a href="#"> Daily earn or bonus rewards.</a></li>
+                                        <li><a href="#">Earn bonus points daily.</a></li>
                                         <li><a href="#"> To start earning rewards, simply register.</a></li>
                                         <li><a href="#"> complete tasks like surveys or watching videos to earn rewards.</a></li>
                                     </ul>
@@ -609,14 +668,14 @@
                     </div>
                     <div class="col-md-4 wow fadeInUp">
                         <div class="dividerHeading">
-                            <h4><span>Why Choose Us</span></h4>
+                            <h4><span>Join Us to Get</span></h4>
                         </div>
                             <div id="accordion">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Quickly Support from experienced entrepreneurs
+                                             Support for your Own Startup   
                                             </button>
                                         </h5>
                                     </div>
@@ -644,7 +703,7 @@
                                     <div class="card-header" id="headingThree">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Get daily new jobs and post your work.
+                                                Experience of Working with Fast Pace Starup Community.
                                             </button>
                                         </h5>
                                     </div>
@@ -661,7 +720,7 @@
                                     <div class="card-header" id="headingFour">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                               Earn Daily Money
+                                               Startup Jobs For Growth Experience
                                             </button>
                                         </h5>
                                     </div>
@@ -889,27 +948,6 @@
 			</div>
 		</section>
 
-        <section class="clients">
-			<div class="container">
-				<div class="row sub_content">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-							<h4><span>Our Team Members</span></h4>
-						</div>
-
-						<div class="our_clients">
-							<ul class="row client_items clearfix">
-								<li class="col-md-3 col-sm-6"><a href="services.html"  data-placement="bottom" data-toggle="tooltip" title="Member 1" ><img src="#" alt="" /></a></li>
-								<li class="col-md-3 col-sm-6"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Member 2" ><img src="#" alt="" /></a></li>
-								<li class="col-md-3 col-sm-6"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Member 3" ><img src="#" alt="" /></a></li>
-								<li class="col-md-3 col-sm-6"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Member 4" ><img src="#" alt="" /></a></li>
-							</ul><!--/ .client_items-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
         <section class="promo_box wow bounce">
             <div class="container">
                 <div class="row">
@@ -1046,6 +1084,6 @@
             // WOW Animation
             new WOW().init();
         </script>
-    <!--[endif]-->
+    <![endif]-->
 </body>
 </html>

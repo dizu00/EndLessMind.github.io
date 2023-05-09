@@ -6,120 +6,8 @@
     <link rel="stylesheet" href="css/jquery.smartmenus.bootstrap-4.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css"/>
-
-	<style>
-		*{
-						margin: 0;
-						padding: 0;
-						box-sizing: border-box;
-						font-family: 'Poppins', sans-serif;
-					}
-					
-					body
-					
-					{
-						background: #000;
-						min-height: 200vh;
-					}
-					
-					header
-					{
-						position: fixed;
-						top: 0;
-						left: 0;
-						width: 100%;
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						transition: 0.6s;
-						padding: 40px 100px;
-						z-index: 100000;
-					}
-					
-					header .logobhai
-					{
-						position: relative;
-						width: 6;
-						height: 6vh;
-					
-					}
-					
-					header.sticky
-					{
-						padding: 5px 100px;
-						background: #fff;
-					}
-					header .vaim
-					{
-						position: relative;
-						font-weight: 700;
-						color:  #fff;
-						text-decoration: none;
-						font-size: 1.5em;
-						text-transform: uppercase;
-						letter-spacing: 2px;
-						transition: 0.6s;
-					
-					}
-					
-					header ul
-					{
-						position: relative;
-						display: inline-flex;
-						justify-content: center;
-						align-items: center;
-					}
-					
-					
-					header ul li
-					{
-						position: relative;
-						list-style: none;
-					
-					}
-					
-					header ul li a
-					{
-						position: relative;
-						margin: 0 15px;
-						text-decoration: none;
-						color: #fff;
-						letter-spacing: 2px;
-						font-weight: 500px;
-						transition: 0.6s;
-					}
-					
-					.ritik
-					{
-						position: relative;
-						width: 100%;
-						height: 49vh;
-						/*background: url('https://source.unsplash.com/720x600/?tool');*/
-						background: url('check.jpg');
-						background-size: cover;
-					
-					}
-					
-					header.sticky .vaim, 
-					
-					header.sticky ul li a
-					{
-						color: #000;
-					}
-					
-					
-					.container{
-						max-width: 1170px;
-						margin:auto;
-					}
-					.row{
-						display: flex;
-						flex-wrap: wrap;
-					}
-					ul{
-						list-style: none;
-					}
-	</style>
+	<link rel="stylesheet" href="css/ideafeedback.css">
+	
 </head>
 
 
@@ -318,8 +206,8 @@
 	</div></div>
 	</div>
 	
-
-
+	<section>
+		<div id="form" style="margin: 20px;">
 	<h1>Idea Feed Form</h1>
 	<form action="ideafeedpage.php" method="POST">
 		<label for="name">Name:</label>
@@ -328,7 +216,133 @@
 		<input type="email" name="email" required><br><br>
 		<label for="idea">Idea:</label>
 		<textarea name="idea" required></textarea><br><br>
-		<input type="submit" value="Submit">
+		<label for="images">Idea Support Documents:</label><br><br>
+		<label for="image">Image</label>
+		<!-- <input type="file" name="" id=""> -->
+		<input type="image" src="#" alt="Enter Image" required><br><br>
+		<label for="file">FILES(Doc/Txt/Pdf)</label>
+		<input type="file" name="" id="">
+		<label for="link">Idea Support Website Link:</label>
+		<input type="url" name="" id=""><br><br>
+		<input type="submit" value="Submit" style="color: blue; ">
 	</form>
+		</div>
+	</section>
+
+	<!-- Start Footer -->
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="widget_title">
+                        <h4><span>About Us</span></h4>
+                    </div>
+                    <div class="widget_content">
+                        <p>Donec earum rerum hic tenetur ans sapiente delectus, ut aut reiciendise voluptat maiores alias consequaturs aut perferendis doloribus asperiores.</p>
+                        <ul class="contact-details-alt">
+                            <li><i class="fa fa-map-marker"></i> <p><strong>Address</strong>: #2021 Lorem Ipsum</p></li>
+                            <li><i class="fa fa-user"></i> <p><strong>Phone</strong>:(+91) 9000-12345</p></li>
+                            <li><i class="fa fa-envelope"></i> <p><strong>Email</strong>: <a href="#">mail@example.com</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="widget_title">
+                        <h4><span>Recent Posts</span></h4>
+                    </div>
+                    <div class="widget_content">
+                        <ul class="links">
+                            <li> <a href="#">Aenean commodo ligula eget dolor<span>November 07, 2020</span></a></li>
+                            <li> <a href="#">Temporibus autem quibusdam <span>November 05, 2020</span></a></li>
+                            <li> <a href="#">Debitis aut rerum saepe <span>November 03, 2020</span></a></li>
+                            <li> <a href="#">Et voluptates repudiandae <span>November 02, 2020</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="widget_title">
+                        <h4><span>Twitter</span></h4>
+                    </div>
+                    <div class="widget_content">
+                        <ul class="tweet_list">
+                            <li class="tweet_content item">
+                                <p class="tweet_link"><a href="#">@yahooobaba </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                                <span class="time">29 September 2020</span>
+                            </li>
+                            <li class="tweet_content item">
+                                <p class="tweet_link"><a href="#">@yahooobaba </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                                <span class="time">29 September 2020</span>
+                            </li>
+                            <li class="tweet_content item">
+                                <p class="tweet_link"><a href="#">@yahooobaba </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                                <span class="time">29 September 2020</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget_content">
+                        <div class="tweet_go"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="widget_title">
+                        <h4><span>Flickr Gallery</span></h4>
+                    </div>
+                    <div class="widget_content">
+                        <div class="flickr">
+                            <ul id="flickrFeed" class="flickr-feed"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!--end footer-->
+
+	<section class="footer_bottom">
+		<div class="container">
+			<div class="row">
+                <div class="col-sm-6">
+                    <p class="copyright">&copy; Copyright 2020 | Powered by  <a href="#">EndlessMind</a></p>
+                </div>
+
+                <div class="col-sm-6 ">
+                    <div class="footer_social">
+                        <ul class="footbot_social">
+                            <li><a class="fb" href="#." data-placement="top" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#." data-placement="top" data-toggle="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="skype" href="#." data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
+                            <li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/retina-1.1.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- WARNING: Wow.js doesn't work in IE 9 or less -->
+    <!--[if gte IE 9 | !IE ]><!-->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script>
+            // WOW Animation
+            new WOW().init();
+        </script>
+    <![endif]-->
 </body>
 </html>
